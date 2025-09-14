@@ -1,5 +1,4 @@
 import js2py
-<< << << < HEAD
 
 js = '''var calculateNUSMatricNumber = function (id) {
           var matches = id.toUpperCase().match(/^A\d{7}|U\d{6,7}/);
@@ -52,7 +51,6 @@ def U():
 
 A()
 U()
-== == == =
 
 js = '''var calculateNUSMatricNumber = function (id) {
           var matches = id.toUpperCase().match(/^A\d{7}|U\d{6,7}/);
@@ -105,4 +103,3 @@ def U():
 
 A()
 U()
->>>>>> > 507144dcc0a1d2842d9159c9bc777d42c6161594
