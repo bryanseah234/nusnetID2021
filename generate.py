@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 import js2py
+<< << << < HEAD
 
 js = '''var calculateNUSMatricNumber = function (id) {
           var matches = id.toUpperCase().match(/^A\d{7}|U\d{6,7}/);
@@ -25,32 +25,34 @@ js = '''var calculateNUSMatricNumber = function (id) {
       };
     '''
 
-##A0171424M/077L_DSC_3683.jpg
+# A0171424M/077L_DSC_3683.jpg
 
 calculate = js2py.eval_js(js)
+
 
 def A():
     for num in range(1, 10000000):
         front = "A" + str(num).zfill(7)
         full = calculate(front)
         print(full)
-        with open('nusnetidA.txt','a',encoding='utf-8') as f:
+        with open('nusnetidA.txt', 'a', encoding='utf-8') as f:
             f.write(full)
             f.write('\n')
+
 
 def U():
     for num in range(1, 10000000):
         front = "U" + str(num).zfill(7)
         full = calculate(front)
         print(full)
-        with open('nusnetidU.txt','a',encoding='utf-8') as f:
+        with open('nusnetidU.txt', 'a', encoding='utf-8') as f:
             f.write(full)
             f.write('\n')
 
+
 A()
 U()
-=======
-import js2py
+== == == =
 
 js = '''var calculateNUSMatricNumber = function (id) {
           var matches = id.toUpperCase().match(/^A\d{7}|U\d{6,7}/);
@@ -76,28 +78,31 @@ js = '''var calculateNUSMatricNumber = function (id) {
       };
     '''
 
-##A0171424M/077L_DSC_3683.jpg
+# A0171424M/077L_DSC_3683.jpg
 
 calculate = js2py.eval_js(js)
+
 
 def A():
     for num in range(1, 10000000):
         front = "A" + str(num).zfill(7)
         full = calculate(front)
         print(full)
-        with open('nusnetidA.txt','a',encoding='utf-8') as f:
+        with open('nusnetidA.txt', 'a', encoding='utf-8') as f:
             f.write(full)
             f.write('\n')
+
 
 def U():
     for num in range(1, 10000000):
         front = "U" + str(num).zfill(7)
         full = calculate(front)
         print(full)
-        with open('nusnetidU.txt','a',encoding='utf-8') as f:
+        with open('nusnetidU.txt', 'a', encoding='utf-8') as f:
             f.write(full)
             f.write('\n')
 
+
 A()
 U()
->>>>>>> 507144dcc0a1d2842d9159c9bc777d42c6161594
+>>>>>> > 507144dcc0a1d2842d9159c9bc777d42c6161594
