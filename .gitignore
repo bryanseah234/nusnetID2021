@@ -28,3 +28,12 @@ skills/
 skills-lock.json
 docs/
 templates/
+
+# Prevent large file bloat
+nusnetid*.txt
+*.log
+*.tmp
+node_modules/
+__pycache__/
+*.pyc
+.venv/
