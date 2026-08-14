@@ -1,7 +1,32 @@
 
+templates/
+
+# Prevent large file bloat
+nusnetid*.txt
+*.log
+*.tmp
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+venv/
+dist/
+build/
+.next/
+coverage/
+.pytest_cache/
+
 # AI / editor dot directories (managed via sourcerepo)
 .*
 !.github/
+!.agents/
+.agents/*
+!.agents/STATE.md
+!.agents/JOURNAL.md
+!.agents/handoffs/
+!.agents/handoffs/**
 !.gitignore
 !.gitattributes
 !.gitmodules
@@ -27,21 +52,4 @@
 skills/
 skills-lock.json
 docs/
-templates/
-
-# Prevent large file bloat
-nusnetid*.txt
-*.log
-*.tmp
-node_modules/
-__pycache__/
-*.pyc
-.venv/
-.env
-.env.*
-venv/
-dist/
-build/
-.next/
-coverage/
-.pytest_cache/
+# End AI / editor dot directories (managed via sourcerepo)
